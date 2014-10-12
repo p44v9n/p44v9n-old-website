@@ -4,7 +4,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family:Helvetica,Arial,sans-serif;
+    font-family:@fonts;
     color: @light;
     background-color: @dark;
 }
@@ -22,7 +22,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Arial,sans-serif;
+    font-family: @headfont;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -61,7 +61,7 @@ a {
     margin-bottom: 0;
     border-bottom: 1px solid fade(@light, 30%);
     text-transform: uppercase;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: @headfont;
     background-color: @dark;
     .navbar-brand {
         font-weight: 700;
@@ -242,18 +242,6 @@ a {
     padding-top: 100px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: @light;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
@@ -267,7 +255,7 @@ a {
 
 .btn {
     text-transform: uppercase;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: @fonts;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
