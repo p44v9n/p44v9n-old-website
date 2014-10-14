@@ -112,10 +112,7 @@
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Photos</h2>
-                <div id="photo-slides">
-                    <img src="img/photo1.jpg"/>
-                    <img src="img/photo2.jpg" />
-                </div>
+                <p>Content coming soon.</p>
             </div>
         </div>
     </section>
@@ -126,10 +123,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Testimonials</h2>
                 <div id="testimonial-slides">
-                    <p>"The best magician in Oxford"<br />- Tutku Bektaş, Oxford Hub Committee.</p>
-                    <p>"That was insane! You have powers man."<br />- RAG Ball Attendee</p>
-                    <p><br />- Jack Adler, Worcester College Freshers' Committee </p>
-                    <p>Praesent et dapibus neque. Quisque sollicitudin congue magna suscipit commodo. Nullam pharetra dapibus hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                    <p>"The best magician in Oxford!" - Tutku Bektaş, Oxford Hub Committee </p>
                 </div>
             </div>
         </div>
@@ -194,34 +188,16 @@
             navigation: { active: false,},
             play: {
               active: false,
-              effect: "fade",
-              interval: 9000,
+              effect: "slide",
+              interval: 7000,
               auto: true,
-              pauseOnHover: false
+              pauseOnHover: true
             },
             pagination: {
                 active: false,
             }
           });
         });
-
-        $(function(){
-          $("#photo-slides").slidesjs({
-            width: 300,
-            height: 250,
-            navigation: { active: false,},
-            play: {
-              active: false,
-              effect: "slide",
-              interval: 7000,
-              auto: true,
-              pauseOnHover: false
-            },
-            pagination: {
-                active: false,
-            }
-          });
-        });        
     </script>
 </body>
 
