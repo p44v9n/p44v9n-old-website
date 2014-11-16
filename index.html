@@ -126,14 +126,18 @@
     <section id="photos" class="content-section text-center">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Photos</h2>
-                <div id="photo-slides">
-                    <img src="img/img1.JPG">
-                    <img src="img/img2.JPG">
-                    <img src="img/img3.JPG">
-					<img src="img/img4.JPG">
-					<img src="img/img5.JPG">
+                <div id="force-size" style="width:200px; height:200px; margin-left: auto;
+    margin-right: auto;
+">
+                    <h2>Photos</h2>
+                    <div id="photo-slides">
+                        <img src="img/img1.JPG">
+                        <img src="img/img2.JPG">
+                        <img src="img/img3.JPG">
+                        <img src="img/img4.JPG">
+                        <img src="img/img5.JPG">
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,10 +148,10 @@
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Testimonials</h2>
-                    <p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."<br />- Jack Adler, Worcester College Entz Rep</p>
-                    <p>"The best magician in Oxford!"<br />- Tutku Bektaş, Oxford Hub Committee </p>
-                    <p>"Paavan is a charmer in two senses of the word. He charms people with his craft of magic as well as with his charismatic nature. In craft and in person, he is magical."<br />- Elspeth Reilly, American School of London</p>
-                    <p>"Paavan is a very good magician. He sometimes makes me doubt my own disbelief in magic!"<br />- Makena Lohr, Oxford Hub Committee</p>
+                    <p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."<br />- Jack Adler, Worcester College Entz Rep</p><br />
+                    <p>"The best magician in Oxford!"<br />- Tutku Bektaş, Oxford Hub Committee </p><br />
+                    <p>"Paavan is a charmer in two senses of the word. He charms people with his craft of magic as well as with his charismatic nature. In craft and in person, he is magical."<br />- Elspeth Reilly, American School of London</p><br />
+                    <p>"Paavan is a very good magician. He sometimes makes me doubt my own disbelief in magic!"<br />- Makena Lohr, Oxford Hub Committee</p><br />
             </div>
             </div>
     </section>
@@ -157,7 +161,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Paavan</h2>
-                <p>To get in touch regarding booking for events or other enquiries please click <strong><a href="//mailto:paavan.buddhdev+enquiryfromwebsite@gmail.com">here</a></strong>.</p>
+                <p>To get in touch regarding booking for events, or for any other enquiries, please click <strong><a href="mailto:paavan.buddhdev@gmail.com?Subject=Website%20enquiry">here</a></strong>.</p>
             </div>
         </div>                    
     </section>
@@ -207,31 +211,13 @@
         
         $(function(){
           $("#photo-slides").slidesjs({
-            width: 600,
-            height: 500,
+            width: 200,
+            height: 200,
             navigation: { active: false,},
             play: {
               active: false,
               effect: "fade",
-              interval: 7000,
-              auto: true,
-              pauseOnHover: false
-            },
-            pagination: {
-                active: false,
-            }
-          });
-        });
-        
-        $(function(){
-          $("#testimonial-slides").slidesjs({
-            width: 900,
-            height: 900,
-            navigation: { active: false,},
-            play: {
-              active: false,
-              effect: "fade",
-              interval: 14000,
+              interval: 4000,
               auto: true,
               pauseOnHover: false
             },
