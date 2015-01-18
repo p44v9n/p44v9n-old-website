@@ -285,9 +285,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
-.clients {
-  cursor: pointer;
-}
 img.grayscale{
 filter: grayscale(100%);
 -webkit-filter: grayscale(100%); /* For Webkit browsers */
