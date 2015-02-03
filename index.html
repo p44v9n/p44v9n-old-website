@@ -2,7 +2,15 @@
 <html lang="en">
 
 <head>
+    <!--
+    Hello and welcome
+    to the source code of my site;
+    hope you like my code.
 
+    This is a (bootstrapped) site made for me by me.
+
+    Maktub.
+    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +48,13 @@
         var easter_egg = new Konami('img/magaac.gif');
     </script>
 
-
+    <!-- Prevent FOUC -->
+    <style>
+         #photo-slides, #bigphoto-slides {
+            display:none;
+         }
+    </style>
+    
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -68,13 +82,13 @@
                         <a class="page-scroll" href="#bio">Bio</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#photos">Photos</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#testimonials">Testimonials</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#clients">Clients</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#photos">Photos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -110,7 +124,29 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Bio</h2>
-                <p><span style="font-variant: small-caps; font-size: 2em">paavan</span> is a close-up magician, specialising in performing at student balls and at other events for young people. When not blowing people's minds, he is studying for a degree in Computer Science & Philosophy at Hertford College, University of Oxford. See what people have to say about him below.</p>
+                <p style="line-height:160%"><span style="font-variant: small-caps; font-size: 2em">paavan</span> is a close-up magician, specialising in performing at student balls and at other events for young people. When not blowing people's minds, he is studying for a degree in Computer Science & Philosophy at Hertford College, University of Oxford. See what people have to say about him below.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Photos Section -->
+    <section id="photos" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Photos</h2>
+                <div id="bigphoto-slides">
+                    <!-- Pics -->
+                    <img src="img/big-photos/yuleball.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/blenheim.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/JtO1.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/JtO2.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/blenheim2.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/JtO3.jpg" class="img-responsive img-rounded" />
+                    <img src="img/big-photos/JtO4.jpg" class="img-responsive img-rounded" />
+                    <!-- Navigation -->
+                    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left fa-fw"></i></a>
+                    <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right fa-fw"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -148,39 +184,28 @@
         </div>
     </section>
     
-    <!-- Photos Section -->
-    <section id="photos" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div id="force-size" style="width:200px; height:200px; margin-left: auto; margin-right: auto;">
-                    <h2>Photos</h2>
-                    <div id="photo-slides">
-                        <img src="img/photos/img6.jpg">
-                        <img src="img/photos/img4.JPG">
-                        <img src="img/photos/img3.JPG">
-        
-                        <!-- UNUSUED PHOTOS
-                        <img src="img/photos/img2.JPG">
-                        <img src="img/photos/img5.JPG">
-                        <img src="img/photos/img1.JPG">-->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Paavan</h2>
+                 <h2>Contact Paavan</h2>
                 <p>To get in touch regarding booking for events, or for any other enquiries,
                     <br />just drop me an email: <strong><a href="mailto:hello@paavan.co?Subject=Website%20enquiry" style="color:#ffacac">hello@paavan.co</a></strong>,
-                    <br />or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" style="color:lightblue">@p44v9n</a>
-                    <br />if that's more your kind of thing.
+                    <br />or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" style="color:lightblue">@p44v9n</a> if that's more your kind of thing.
                     <br />
                 </p>
+                <br />
+                <div id="force-size" style="width:200px; height:200px; margin-left: auto; margin-right: auto;">
+                    <div id="photo-slides">
+                        <img src="img/photos/img6.jpg">
+                        <img src="img/photos/img4.JPG">
+                        <img src="img/photos/img3.JPG">
+                        <img src="img/photos/img5.JPG">
+                        <!-- UNUSUED PHOTOS
+                        <img src="img/photos/img2.JPG">
+                        <img src="img/photos/img1.JPG">-->
+                    </div>
+                </div>
             </div>
         </div>                    
     </section>
@@ -232,21 +257,29 @@
     <script>
         
         $(function(){
-          $("#photo-slides").slidesjs({
-            width: 200,
-            height: 200,
-            navigation: { active: false,},
-            play: {
-              active: false,
-              effect: "fade",
-              interval: 5000,
-              auto: true,
-              pauseOnHover: false
-            },
-            pagination: {
-                active: false,
-            }
-          });
+            $("#photo-slides").slidesjs({
+                width: 200,
+                height: 200,
+                navigation: { active: false,},
+                play: {
+                  active: false,
+                  effect: "fade",
+                  interval: 5000,
+                  auto: true,
+                  pauseOnHover: false
+                },
+                pagination: {
+                    active: false,
+                }
+            });
+            $("#bigphoto-slides").slidesjs({
+                width: 940,
+                height: 528,
+                navigation: { active: false, effect:"slide"},
+                play: { active:false},
+                pagination: { active: false,}
+                
+            });
         });
     </script>
 </body>
