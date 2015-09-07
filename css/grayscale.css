@@ -16,7 +16,7 @@ li > .active {background-color: #333; padding:10px 12px; border-radius:3px;}
 #parallax1, #parallax2, #parallax3, #parallax4, #parallax5 {
     width: 100%;
     padding: 200px 0;
-    margin: 200px 0 30px 0;
+    margin: 200px 0 0 0;
     color: #fff;
     background-color: #000;
     -webkit-background-size: cover;
