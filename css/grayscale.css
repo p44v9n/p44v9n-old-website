@@ -9,9 +9,9 @@ li > .active {background-color: #333; padding:10px 12px; border-radius:3px;}
 
 #parallax1{background: url(../img/parallaxphotos/img1.jpg) no-repeat center center fixed;}
 #parallax2{background: url(../img/parallaxphotos/img2.jpg) no-repeat center center fixed;}
-#parallax3{background: url(../img/parallaxphotos/img3.png) no-repeat center center fixed;}
-#parallax4{background: url(../img/parallaxphotos/img4.png) no-repeat center center fixed;}
-#parallax5{background: url(../img/parallaxphotos/img5.png) no-repeat center center fixed;}
+#parallax3{background: url(../img/parallaxphotos/img3.jpg) no-repeat center center fixed;}
+#parallax4{background: url(../img/parallaxphotos/img4.jpg) no-repeat center center fixed;}
+#parallax5{background: url(../img/parallaxphotos/img5.jpg) no-repeat center center fixed;}
 
 #parallax1, #parallax2, #parallax3, #parallax4, #parallax5 {
     width: 100%;
