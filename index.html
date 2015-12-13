@@ -26,6 +26,7 @@ P
     <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
     
     <!-- Bootstrap Core CSS -->
+    <!-- TODO It'd be nice to rip this out for flexbox, or maybe just wait for bs4 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -130,7 +131,7 @@ P
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Hire Paavan</h2>
-                <p>Have you got an event coming up? I'd love to talk to you about working there, no matter what the occasion is. Having a magician perforing is the perfect way to break ice and entertain guests. From performing elegant card magic during champagne receptions at black-tie and white-tie balls in majestic Oxford buildings, to chilling out and making miracles happen on a sofa at a house party, I have experience in it all. Just <a class="page-scroll" href="#contact" style="color:#ffacac">get in contact</a> and we'll work something out.</p>
+                <p>Have you got an event coming up? I'd love to talk to you about working there, no matter what the occasion is. Having a magician performing is the perfect way to break ice and entertain guests. From performing elegant card magic during champagne receptions at black-tie and white-tie balls in majestic Oxford buildings, to chilling out and making miracles happen on a sofa at a house party, I have experience in it all. Just <a class="page-scroll" href="#contact" style="color:#ffacac">get in contact</a> and we'll work something out.</p>
             </div>
         </div>
     </section>
@@ -184,6 +185,7 @@ P
     <section id="testimonials" class="content-section text-center">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
+            <!--TODO  add expand cut-off - NO jquery! -->
                 <h2>Testimonials</h2>
                 <p class="name"><small><em>If you've seen me perform and want to write a testimonial, <a class="red" href="mailto:hello@paavan.co?Subject=Testimonial">I'd love to hear from you!</a></em></small></p>
                 <p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."</p><p class="name">Jack Adler, Worcester College Entz Rep</p>
@@ -210,6 +212,8 @@ P
                 <img class="grayscale" src="img/clients/worc.PNG" width="100" height="100"  title="Worcester College"/>
                 <img class="grayscale" src="img/clients/hertf.PNG" width="100" height="100" title="Hertford College"/>
                 <img class="grayscale" src="img/clients/ccc.png" width="100" height="100" title="Corpus Christi College"/>
+                <img class="grayscale" src="img/clients/new.png" width="100" height="100" title="New College"/>
+                <img class="grayscale" src="img/clients/bnc.png" width="100" height="100" title="Brasenose College"/>
                 <img class="grayscale" src="img/clients/hughs.png" width="100" height="100" title="St Hugh's College"/>
                 <img class="grayscale" src="img/clients/exeter.png" width="100" height="100" title="Exeter College"/>
                 <img class="grayscale" src="img/clients/peters.png" width="100" height="100" title="St Peter's College"/>
@@ -223,7 +227,8 @@ P
                 <img class="grayscale" src="img/clients/pbh.PNG" width="100" height="100" title="PBH's Free Fringe 2015"/>
                 <img class="grayscale" src="img/clients/jude.jpg" width="100" height="100" title="Jude the Obscure"/>
                 <img class="grayscale" src="img/clients/oxrag.png" width="100" height="100" title="Oxford RAG"/>
-                <!-- to add: Brasenose, New, VT, -->
+                <img class="grayscale" src="img/clients/valthorens.png" width="100" height="100" title="Val Thorens"/>
+                <img class="grayscale" src="img/clients/varsitytrip.png" width="100" height="100" title="Varsity Trip"/>
             </div>
         </div>
     </section>
@@ -240,10 +245,10 @@ P
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-sm-offset-2 vcenter">
+            <div class="col-sm-4 col-sm-offset-2">
                 <img src="img/show/fringe2.gif" title="A Theory Of Magic" width="300px" style="max-width: 100%; height: auto; border:#111 solid 3px"/>
             </div>
-            <div class="col-sm-4 vcenter">
+            <div class="col-sm-4">
                 <p>PAAVAN's debut solo show, A THEORY OF MAGIC, debuted at the Edinburgh Festival Fringe 2015 at La Belle Angele, in association with PBH Free Fringe.</p><p></p>
                 <p>To stay up-to-date with future performances, subscribe to notifications from the <a href="http://www.facebook.com/ATheoryOfMagic/" class="red">Facebook</a> page.</p><p></p>
                 <p>For info regarding press enquiries just <a href="mailto:hello@paavan.co?Subject=A%20Theory%20of%20Magic" class="blue">drop me a line</a>.</p>
@@ -264,15 +269,38 @@ P
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
+
+        <!-- Title -->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                 <h2>Contact Paavan</h2>
-                <p>To get in touch regarding booking for events, or for any other enquiries,
-                    <br />just drop me an email: <strong><a href="mailto:hello@paavan.co?Subject=Website%20enquiry" class="red">hello@paavan.co</a></strong>,
-                    <br />or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue">@p44v9n</a> if that's more your kind of thing.
-                    <br />
+		        <h2>Contact Paavan</h2>
+            </div>
+        </div>
+
+        <!-- Two columns -->
+        <div class="row">
+            <!-- LHS -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-offset-2">
+                <p>To get in touch regarding booking for events, or for any other enquiries, just drop me an email using the box on the right, or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue">@p44v9n</a> if that's more your kind of thing.
                 </p>
-                <br />
+            </div>
+            <!-- RHS -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<form class="form-horizontal" action="//formspree.io/hello@paavan.co" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Your name" >
+                    <input class="form-control" type="email" name="_replyto" placeholder="Your email" >
+                    <textarea class="form-control" type="text" name="message" maxlength="1000" id="message" placeholder="Your message" rows="3"></textarea>
+                    <input type="text" name="_gotcha" style="display:none" /> <!--Honeypot field for spammer-->
+                    <input class="form-control" type="submit" value="Send">
+                </div>
+				</form>
+            </div>
+        </div>
+        
+        <!-- Photos of P in a circle -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
                 <!-- <div id="force-size" style="width:200px; height:200px; margin-left: auto; margin-right: auto;"> -->
                 <div style="width:200px; height:200px; margin-left: auto; margin-right: auto;">
                     <div id="photo-slides">
@@ -286,7 +314,8 @@ P
                     </div>
                 </div>
             </div>
-        </div>                    
+        </div>
+
     </section>
 
     <!-- Footer -->

@@ -39,6 +39,20 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px
   font-variant: small-caps; font-size: 2em;
 }
 
+
+
+input, textarea {
+  margin:.5em;
+  padding:1em;
+ 
+}
+
+input[type="submit"]{
+  background-color:#37137F;
+  color:#fff;
+}
+
+
 /* photo slide show and nav for that */
 
 #bigphoto-slides a:link {color:#fff;}
