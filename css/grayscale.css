@@ -52,6 +52,12 @@ input[type="submit"]{
   color:#fff;
 }
 
+.form-group::-moz-selection, .form-group::selection{
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* photo slide show and nav for that */
 
