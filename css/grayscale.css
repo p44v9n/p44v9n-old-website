@@ -3,10 +3,10 @@
 .name {
   color: #666666;
 }
-.name:after{
+/*.name:after{
   content: '\A\A';
   white-space: pre;
-}
+}*/
 .red{
   color:#ffacac;
 }
