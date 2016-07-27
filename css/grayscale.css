@@ -20,6 +20,9 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px
 
 .intro-text{
   background-color: rgba(0,0,0,0.5);
+  width:70%;
+  margin:0 auto;
+  padding:10px 0;
 }
 .vcenter {
   /*display: inline-block;
@@ -35,7 +38,7 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px
 
 /*for when 'paavan' appears in text*/
 .name-inline{
-  font-variant: small-caps; font-size: 2em;
+  font-variant: small-caps; font-size: 1.7em;
 }
 
 
@@ -76,7 +79,7 @@ input[type="submit"]{
 #parallax2{background: url(../img/parallaxphotos/img2.jpg) no-repeat center center fixed;}
 #parallax3{background: url(../img/parallaxphotos/img3.jpg) no-repeat center center fixed;}
 #parallax4{background: url(../img/parallaxphotos/img1.jpg) no-repeat center center fixed;}
-#parallax5{background: url(../img/parallaxphotos/img5.jpg) no-repeat center center fixed;}
+#parallax5{background: url(../img/parallaxphotos/img3.jpg) no-repeat center center fixed;}
 
 #parallax1, #parallax2, #parallax3, #parallax4, #parallax5 {
     width: 100%;
@@ -117,14 +120,14 @@ h6 {
 }
 p {
   margin: 0 0 5px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
 @media (min-width: 767px) {
   p {
     margin: 0 0 5px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.6;
   }
 }
@@ -219,31 +222,20 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 40px;
+  font-size: 20px;
 }
 .intro .intro-body .intro-text {
-  font-size: 18px;
+  font-size: 15px;
 }
-@media (min-width: 767px) {
-  .intro {
-    height: 100%;
-    padding: 0;
-  }
-  .intro .intro-body .brand-heading {
-    font-size: 100px;
-  }
-  .intro .intro-body .intro-text {
-    font-size: 28px;
-  }
-}
+
 .btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  padding: 10px 16px;
   border: 2px solid #ffffff;
-  border-radius: 35px;
-  font-size: 40px;
+  border-radius: 30px;
+  font-size: 28px;
   color: #ffffff;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
@@ -254,7 +246,7 @@ a:focus {
 .btn-circle:focus {
   outline: none;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.4);
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -301,15 +293,12 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
+    padding-top: 200px;
+  } 
 }
 .btn {
   text-transform: uppercase;
@@ -341,7 +330,6 @@ ul.banner-social-buttons {
 }
 @media (max-width: 767px) {
   ul.banner-social-buttons li {
-    display: block;
     margin-bottom: 20px;
     padding: 0;
   }
@@ -397,4 +385,17 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 
 .client-images {
   display:inline !important;
+}
+
+@media (min-width: 767px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 80px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 18px;
+  }
 }

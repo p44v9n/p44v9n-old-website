@@ -142,7 +142,6 @@ P
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Testimonials</h2>
-                    <p class="name"><small><em>If you've seen me perform and want to write a testimonial, <a class="red page-scroll" href="#contact">I'd love to hear from you!</a></em></small></p><br />
                     <div class="testimonials" >
                         <div>
                             <p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."</p>
@@ -178,9 +177,10 @@ P
                         </div> -->
                         <div>
                             <p>"A thank you to Paavan, our magical man,<br />'Cos he can do tricks that no one else can.<br />Jaws dropping hard; guests losing their s**t<br />And great fun himself &mdash; a man of great wit."</p>
-                            <p class="name">Dickie Cartwright, Varsity Trip Committee and Groundhog Day</p>
+                            <p class="name">Dickie Cartwright, Varsity Trip Committee and <span id="groundhogclick">Groundhog Day</span></p>
                             <img class="client-images" width="100" height="100" src="img/clients/varsitytrip.png" />
-                            <img class="client-images" width="100" height="100" src="img/clients/groundhogday.png" />
+                            <img class="client-images" width="100" height="100" src="img/clients/valthorens.png" />
+                            <img id="hiddengroundhog" class="client-images" width="100" height="100" src="img/clients/groundhogday.png" style="display:none;"/>
                         </div>
                         <div>
                             <p>"The best magician in Oxford!"</p>
@@ -188,6 +188,7 @@ P
                             <img class="client-images" width="100" height="100" src="img/clients/oxhub.png" />
                         </div>
                     </div>
+                    <p class="name"><small><em>If you've seen me perform and want to write a testimonial, <a class="red page-scroll" href="#contact">I'd love to hear from you!</a></em></small></p><br />
                 </div>
             </div>
         </section>
@@ -202,33 +203,33 @@ P
                     <h2>Photos</h2>
                     <div class="bigphotoslick">
                         <!-- Pics -->
-                        <img data-lazy="img/big-photos/jsoc1.jpg" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/hildas2_edit.png" class="img-responsive img-rounded" /> moved to a parallax photo-->
-                        <img data-lazy="img/big-photos/parisball2.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/blenheim.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/vt2.jpg" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/jsoc3_crop.jpg" class="img-responsive img-rounded" /> this one is in black and white-->
-                        <img data-lazy="img/big-photos/pembroke1.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/JtO3.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/pembroke3.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/hildas1.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/jsoc4.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/annabelcc.jpeg" class="img-responsive img-rounded" /> <!-- maybe low qual? -->
-                        <img data-lazy="img/big-photos/parisball3.jpg" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/yuleball.jpg" class="img-responsive img-rounded" /> moved to a parallax photo -->
-                        <img data-lazy="img/big-photos/jsoc6.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/vt1.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/pembroke4.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/blenheim.jpg" class="img-responsive img-rounded" /> <!-- repeat but I want it seen lots lol -->
-                        <img data-lazy="img/big-photos/blenheim2.jpg" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/parisball1.jpg" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/pembroke2.pjpg" class="img-responsive img-rounded" /> spectator -->
-                        <!-- <img data-lazy="img/big-photos/icaew1_colour.jpg" class="img-responsive img-rounded" /> derp face -->
-                        <!-- <img data-lazy="img/big-photos/JtO4.jpg" class="img-responsive img-rounded" /> low qual-->
-                        <!-- <img data-lazy="img/big-photos/JtO2.jpg" class="img-responsive img-rounded" /> b&w and low qual -->
-                        <!-- <img data-lazy="img/big-photos/jsoc2.jpg" class="img-responsive img-rounded" /> parallax photo -->
-                        <!-- <img data-lazy="img/big-photos/jsoc5.jpg" class="img-responsive img-rounded" /> card spring, no spectators-->
-                        <!-- <img data-lazy="img/big-photos/JtO1.jpg" class="img-responsive img-rounded" /> low qual-->
+                        <img data-lazy="img/big-photos/jsoc1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <!-- <img data-lazy="img/big-photos/hildas2_edit.png" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo-->
+                        <img data-lazy="img/big-photos/parisball2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/vt2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <!-- <img data-lazy="img/big-photos/jsoc3_crop.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> this one is in black and white-->
+                        <img data-lazy="img/big-photos/pembroke1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/JtO3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/pembroke3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/hildas1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/jsoc4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/annabelcc.jpeg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- maybe low qual? -->
+                        <img data-lazy="img/big-photos/parisball3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <!-- <img data-lazy="img/big-photos/yuleball.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo -->
+                        <img data-lazy="img/big-photos/jsoc6.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/vt1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/pembroke4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- repeat but I want it seen lots lol -->
+                        <img data-lazy="img/big-photos/blenheim2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <img data-lazy="img/big-photos/parisball1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+                        <!-- <img data-lazy="img/big-photos/pembroke2.pjpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> spectator -->
+                        <!-- <img data-lazy="img/big-photos/icaew1_colour.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> derp face -->
+                        <!-- <img data-lazy="img/big-photos/JtO4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
+                        <!-- <img data-lazy="img/big-photos/JtO2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> b&w and low qual -->
+                        <!-- <img data-lazy="img/big-photos/jsoc2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> parallax photo -->
+                        <!-- <img data-lazy="img/big-photos/jsoc5.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> card spring, no spectators-->
+                        <!-- <img data-lazy="img/big-photos/JtO1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
                         <!-- Navigation
                         <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left fa-fw"></i></a>
                         <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right fa-fw"></i></a>
@@ -253,8 +254,10 @@ P
                     <img src="img/show/fringe2.gif" title="A Theory Of Magic" width="300px" style="max-width: 100%; height: auto; border:#111 solid 3px"/>
                 </div>
                 <div class="col-sm-4">
-                    <p>PAAVAN's solo show,<br />A THEORY OF MAGIC,<br />debuted at the Edinburgh Festival Fringe 2015 at La Belle Angele, in association with PBH Free Fringe.</p><p></p>
-                    <p>To stay up-to-date with future performances, subscribe to notifications from the <a href="http://www.facebook.com/ATheoryOfMagic/" class="red">Facebook</a> page.</p><p></p>
+                    <p>PAAVAN's solo show,<br />A THEORY OF MAGIC,<br />debuted at the Edinburgh Festival Fringe 2015 at <a href="http://www.la-belleangele.com/">La Belle Angele</a>, in association with PBH's Free Fringe.</p>
+                    <br />
+                    <p>To stay up-to-date with future performances, subscribe to notifications from <a href="http://www.facebook.com/ATheoryOfMagic/" class="red">Facebook</a>.</p>
+                    <br />
                     <p>For info regarding press enquiries just <a href="mailto:hello@paavan.co?Subject=A%20Theory%20of%20Magic" class="blue">drop me a line</a>.</p>
                 </div>
             </div>
@@ -267,6 +270,7 @@ P
                 </div>
             </div>
         </section>
+
         <section id="parallax5" class="content-section text-center">
         </section>
 
@@ -293,7 +297,7 @@ P
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2" >
                     <h2>Contact Paavan</h2>
-                    <p>To get in touch regarding booking for events, or for any other enquiries, just drop me an email using the box below, or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue" >@p44v9n</a> if that's more your kind of thing.</p><br />
+                    <p>To get in touch regarding booking for events, or for any other enquiries, please drop me an email using the form below.<!-- , or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue" >@p44v9n</a> if that's more your kind of thing. --></p><br />
                     <form class="form-horizontal" action="//formspree.io/hello@paavan.co" method="POST" >
                         <div class="form-group">
                             <div class="row">
@@ -318,7 +322,7 @@ P
             <footer>
                 <div class="container text-center">
                     <p><span class="red">♥</span> <span class="blue">♠ <span class="red">♦</span> <span class="blue">♣</span><br />
-                    <p><small>&copy; <script>new Date().getFullYear()>2010&&document.write(" "+new Date().getFullYear());</script>, PPB.</small></p><br />
+                    <p><small>&copy; <script>new Date().getFullYear()>2010&&document.write(" "+new Date().getFullYear());</script>, PB.</small></p><br />
                     <ul class="list-inline banner-social-buttons">
                         <li>
                             <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fpaavan.buddhdev&width=92&height=21&layout=button_count&show_faces=false&appId" width="92" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -344,6 +348,7 @@ P
 
 
         <script>
+
        $(document).ready(function(){
 
             $('.testimonials').slick({
@@ -363,7 +368,8 @@ P
               slidesToScroll:1,
               infinite:true,
               // responsive: []
-            });            
+            });   
+
             $('.profilephotoslick').slick({      
                 dots:false,
                 fade:true,
@@ -373,6 +379,7 @@ P
                 autoplaySpeed:500,
                 speed:4000,
             });
+
         });
 
         // Twitter widget
@@ -392,6 +399,16 @@ P
         
         return t;
         }(document, "script", "twitter-wjs"));
+
+
+
+
+            $('#groundhogclick').on('hover',function(){
+                $('#hiddengroundhog').css('display','inline');
+                $('#hiddengroundhog').css('padding','50px');
+            }
+            );
+
         </script>
         
         <!--   <div itemscope itemtype="http://schema.org/Person">
