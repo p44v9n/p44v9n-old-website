@@ -2,423 +2,452 @@
 <!--
 Heyo!
 If you're here to check out source code to see how anything works, please know that you can drop me a line and I'd be happy to help explain or maybe even work with your website project. I'm humbled if you're using my little site to inspire your own, but please don't copy anything from here.
-Cheers!
+Website built upon this theme: http://startbootstrap.com/template-overviews/grayscale/ - cheers @n33co!
+Yours,
 P
 -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
-        <meta name="description" content="Magician PAAVAN will blow the minds of the guests at your event, whether it's a ball, a wedding, a party or a corporate do. He is based in Oxford and regularly performs  at luxorious student events.">
-        <meta name="keywords" content="magician, magic, entertainer, Paavan, oxford, event, entertainment, ball, party, london, oxford, celebrity, parties, functions, hire, barmitzvah, batmitzvah, exciting, mentalist, mind reading, mentalism, dynamo, derren brown, troy, close-up, balls, weddings, wedding, trade show,illusion, illusionist, corporate entertainment, events, edinburgh, fringe, pbh, free fringe, la belle angele, theory, a theory of magic, magicians, Paavan Buddhdev, entertain, entertainer, uk, cards">
-        <meta name="author" content="Paavan">
-        <meta name="wot-verification" content="125615fc40d90a49dc68"/>
-        <meta name="theme-color" content="##FF00BA">
-        <title>PAAVAN · Magician · Performer at University of Oxford Balls & Other Events</title>
-        <!-- Icons -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
-        
-        <!-- Bootstrap Core CSS -->
-        <!-- TODO It'd be nice to rip this out for flexbox, or maybe just wait for bs4 . would also mean no jq dependence. also skel is a nice grid. -->
-        <!-- TODO autominify all of these. also uses sass or less more -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
-        <!-- CSS for slickjs carousel (CDN) -->
-        <link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-        <!-- Custom Fonts -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-        
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <!--Konami Code-->
-        <script type="text/javascript" src="js/konami.js"></script>
-        <script type="text/javascript">var easter_egg = new Konami('img/easteregg/magaac.gif');</script>
-        <!-- Prevent FOUC -->
-        <style>
-        #photo-slides, #bigphoto-slides {
-        display:none;
-        }
-        .profileshot{
-        border-radius:50%;
-        border-width: 2px;
-        border-color:white;
-        }
-        </style>
-        
-    </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-magic fa-fw fa-flip-horizontal"></i>&nbsp;PAAVAN
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li><a class="page-scroll" href="#bio">Bio</a></li>
-                        <li><a class="page-scroll" href="#hire">Hire</a></li>
-                        <li><a class="page-scroll" href="#testimonials">Testimonials</a></li>
-                        <li><a class="page-scroll" href="#photos">Photos</a></li>
-                        <li><a class="page-scroll" href="#fringe">Show</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading">Paa<span class="kern">v</span><span class="kern">a</span>n</h1>
-                        </div>
-                        <div class="col-xs-4 col-xs-offset-4">
-                            <p class="intro-text">
-                                Professional entertainer;<br />master magician.
-                            </p>
-                            <br />
-                            <a href="#bio" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <!-- About Section -->
-        <section id="bio" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Bio</h2>
-                    <p style="line-height:160%"><span class="name-inline">paavan</span> is a close-up magician, who specialises in performing at student balls and other events for young people. When not blowing people's minds, he is studying for a degree in Computer Science & Philosophy at Hertford College, University of Oxford.<br /><br />See what people have to say about him <a class="page-scroll" href="#testimonials" style="color:lightblue">below</a>.</p>
-                </div>
-            </div>
-        </section>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+	<meta name="description" content="Magician PAAVAN will blow the minds of the guests at your event, whether it's a ball, a wedding, a party or a corporate do. He is based in Oxford and regularly performs  at luxorious student events.">
+	<meta name="keywords" content="magician, magic, entertainer, Paavan, oxford, event, entertainment, ball, party, london, oxford, celebrity, parties, functions, hire, barmitzvah, batmitzvah, exciting, mentalist, mind reading, mentalism, dynamo, derren brown, troy, close-up, balls, weddings, wedding, trade show,illusion, illusionist, corporate entertainment, events, edinburgh, fringe, pbh, free fringe, la belle angele, theory, a theory of magic, magicians, Paavan Buddhdev, entertain, entertainer, uk, cards">
+	<meta name="author" content="Paavan">
+	<meta name="wot-verification" content="125615fc40d90a49dc68"/>
+	<meta name="theme-color" content="##FF00BA">
+	<title>PAAVAN · Magician · Performer at University of Oxford Balls & Other Events</title>
+	<!-- Icons -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
 
-        <!-- <section id="parallax1" class="content-section text-center"> -->
-        <section id="parallax1" >
-        </section>
-        
-        <!-- HIREME Section -->
-        <section id="hire" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Hire Paavan</h2>
-                    <p>Have you got an event coming up? I'd love to talk to you about working there, no matter what the occasion is. Having a magician performing is the perfect way to break ice and entertain guests.<br /><br />From performing elegant card magic during champagne receptions at black-tie and white-tie balls in majestic Oxford halls, to chilling out and making miracles happen on a sofa at a house party, I have experience in it all.<br /><br />Just <a class="page-scroll" href="#contact" style="color:#ffacac">get in contact</a> and we'll work something out.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="parallax2" class="content-section text-center">
-        </section>
-        
-        <!-- Testimonials -->
-        <!-- TODO - change to carousel, with a 'see-all' button that brings up a modal using masonry to arrange all of them on a single page. also merge in client photos for each. -->
-        <section id="testimonials" class="content-section text-center">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Testimonials</h2>
-                    <div class="testimonials" >
-                        <div>
-                            <p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."</p>
-                            <p class="name">Jack Adler, Worcester College Entz Rep</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxuni.png" />
-                            <img class="client-images" width="100" height="100" src="img/clients/worc.PNG" />
-                        </div>
-                        <div>
-                            <p>"Simply. Mind. Blown. It was great to have Paavan perform at our event and amaze all our guests, I would definitely request his presence next time!"</p>
-                            <p class="name">Pauline Chatelan, Oxford RAG Officer</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxrag.png" />
-                        </div>
-                        <div>
-                            <p>"When looking for magicians for our ball, I instantly thought of Paavan &mdash; I've seen him at numerous events and would class him as one of the best magicians in Oxford. He was easy to book, flexible and professional. On the night, the guests all loved him and are still trying to figure out how he does it! For anyone looking for a magician, I couldn't recommend Paavan more highly.</p>
-                            <p class="name">Louisa Manning, St Peter's Ball</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxuni.png" />
-                            <img class="client-images" width="100" height="100" src="img/clients/peters.png" />
-                        </div>
-                        <div>
-                            <p>"Paavan definitely made a big difference to our event. It wouldn't have been the same without him!"</p>
-                            <p class="name">Liam Peck, Oxford Medical Students Society Ball</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxmedsoc.PNG" /><img class="client-images" width="100" height="100" src="img/clients/bleinheim.png" />
-                        </div>
-                        <div>
-                            <p>"Paavan makes me doubt my own disbelief in magic!"</p>
-                            <p class="name">Makena Löhr, Oxford Hub President</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxhub.png" />
-                        </div>
-                        <!-- <div>
-                            <p>"Paavan is a charmer in two ways: he charms people with his craft of magic as well as with his charismatic nature. In craft and in person, he is magical.</p>
-                            <p class="name">Elspeth Reilly, American SchoolLondon</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/" />
-                        </div> -->
-                        <div>
-                            <p>"A thank you to Paavan, our magical man,<br />'Cos he can do tricks that no one else can.<br />Jaws dropping hard; guests losing their s**t<br />And great fun himself &mdash; a man of great wit."</p>
-                            <p class="name">Dickie Cartwright, Varsity Trip Committee and <span id="groundhogclick">Groundhog Day</span></p>
-                            <img class="client-images" width="100" height="100" src="img/clients/varsitytrip.png" />
-                            <img class="client-images" width="100" height="100" src="img/clients/valthorens.png" />
-                            <img id="hiddengroundhog" class="client-images" width="100" height="100" src="img/clients/groundhogday.png" style="display:none;"/>
-                        </div>
-                        <div>
-                            <p>"The best magician in Oxford!"</p>
-                            <p class="name">Tutku Bektaş, Oxford Vice-President</p>
-                            <img class="client-images" width="100" height="100" src="img/clients/oxhub.png" />
-                        </div>
-                    </div>
-                    <p class="name"><small><em>If you've seen me perform and want to write a testimonial, <a class="red page-scroll" href="#contact">I'd love to hear from you!</a></em></small></p><br />
-                </div>
-            </div>
-        </section>
+	<!-- Bootstrap Core CSS -->
+	<!-- TODO It'd be nice to rip this out for flexbox, or maybe just wait for bs4 . would also mean no jq dependence. also skel is a nice grid. -->
+	<!-- TODO autominify all of these. also uses sass or less more -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/grayscale.css" rel="stylesheet">
+	<!-- CSS for slickjs carousel (CDN) -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-        <section id="parallax3" class="content-section text-center">
-        </section>
+	<!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
-        <!-- Photos Section -->
-        <section id="photos" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Photos</h2>
-                    <div class="bigphotoslick">
-                        <!-- Pics -->
-                        <img data-lazy="img/big-photos/jsoc1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/hildas2_edit.png" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo-->
-                        <img data-lazy="img/big-photos/parisball2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/vt2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/jsoc3_crop.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> this one is in black and white-->
-                        <img data-lazy="img/big-photos/pembroke1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/JtO3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/pembroke3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/hildas1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/jsoc4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/annabelcc.jpeg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- maybe low qual? -->
-                        <img data-lazy="img/big-photos/parisball3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/yuleball.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo -->
-                        <img data-lazy="img/big-photos/jsoc6.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/vt1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/pembroke4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- repeat but I want it seen lots lol -->
-                        <img data-lazy="img/big-photos/blenheim2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <img data-lazy="img/big-photos/parisball1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
-                        <!-- <img data-lazy="img/big-photos/pembroke2.pjpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> spectator -->
-                        <!-- <img data-lazy="img/big-photos/icaew1_colour.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> derp face -->
-                        <!-- <img data-lazy="img/big-photos/JtO4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
-                        <!-- <img data-lazy="img/big-photos/JtO2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> b&w and low qual -->
-                        <!-- <img data-lazy="img/big-photos/jsoc2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> parallax photo -->
-                        <!-- <img data-lazy="img/big-photos/jsoc5.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> card spring, no spectators-->
-                        <!-- <img data-lazy="img/big-photos/JtO1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
-                        <!-- Navigation
-                        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left fa-fw"></i></a>
-                        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right fa-fw"></i></a>
-                        -->
-                    </div>
-                </div>
-            </div>
-        </section>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
-        <section id="parallax4" class="content-section text-center">
-        </section>
+		<!-- Prevent FOUC -->
+	<style>
+		#photo-slides, #bigphoto-slides {
+			display:none;
+		}
+		.profileshot{
+			border-radius:50%;
+			border-width: 2px;
+			border-color:white;
+		}
+	</style>
+</head>
 
-        <!-- fringe Section -->
-        <section id="fringe" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <h2>Paavan's Solo Show</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-2">
-                    <img src="img/show/fringe2.gif" title="A Theory Of Magic" width="300px" style="max-width: 100%; height: auto; border:#111 solid 3px"/>
-                </div>
-                <div class="col-sm-4">
-                    <p>PAAVAN's solo show,<br />A THEORY OF MAGIC,<br />debuted at the Edinburgh Festival Fringe 2015 at <a href="http://www.la-belleangele.com/">La Belle Angele</a>, in association with PBH's Free Fringe.</p>
-                    <br />
-                    <p>To stay up-to-date with future performances, subscribe to notifications from <a href="http://www.facebook.com/ATheoryOfMagic/" class="red">Facebook</a>.</p>
-                    <br />
-                    <p>For info regarding press enquiries just <a href="mailto:hello@paavan.co?Subject=A%20Theory%20of%20Magic" class="blue">drop me a line</a>.</p>
-                </div>
-            </div>
-            <br /><br />
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <h4>Praise for a Theory of Magic</h4>
-                    <p>"<!--Judging by the applause and puzzled/intrigued faces, my friends and I agree that the show went amazingly well. -->Unlike the usual corny magic shows I had come to expect, Paavan's show thankfully didn't involve pulling any rabbits out of hats, but instead had genuinely baffling tricks. 10/10 would recommend."</p><p class="name">Phoebo Friedin, Brasenose JCR Freshers' Committee</p><br />
-                    <p>"Being part of Paavan's magic is like rolling down a grassy bank into a river of puppies, candyfloss and laughter. Delightful, hilarious and intriguing."</p><p class="name">Guy Lewy, Co-President of the Cambridge University Scientific Society</p>
-                </div>
-            </div>
-        </section>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <section id="parallax5" class="content-section text-center">
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="container content-section text-center">
-            <!-- TODO implement peeky placeholders http://codepen.io/lukeandrewreid/pen/OVPGXN -->
-            <!-- Photos of P in a circle -->
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- <div id="force-size" style="width:200px; height:200px; margin-left: auto; margin-right: auto;"> -->
-                    <div style="width:200px; height:200px; margin-left: auto; margin-right: auto;">
-                        <div class="profilephotoslick">
-                            <img class="profileshot" src="img/photos/img(1).jpg" />
-                            <img class="profileshot" src="img/photos/img(2).jpg" />
-                            <img class="profileshot" src="img/photos/img(3).jpg" />
-                            <img class="profileshot" src="img/photos/img(4).jpg" />
-                            <img class="profileshot" src="img/photos/img(5).jpg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br /><br />
-            <!-- Title -->
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2" >
-                    <h2>Contact Paavan</h2>
-                    <p>To get in touch regarding booking for events, or for any other enquiries, please drop me an email using the form below.<!-- , or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue" >@p44v9n</a> if that's more your kind of thing. --></p><br />
-                    <form class="form-horizontal" action="//formspree.io/hello@paavan.co" method="POST" >
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input class="form-control" type="text" name="name" placeholder="Your name" >
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="form-control" type="email" name="_replyto" placeholder="Your email" >
-                                </div>
-                            </div>
-                            <textarea class="form-control" name="message" maxlength="1000" id="message" placeholder="Your message" rows="5"></textarea>
-                            <input type="text" name="_gotcha" style="display:none" /> <!--Honeypot field for spammer-->
-                            <input class="btn btn-default" type="submit" value="Send" />
-                        </div>
-                    </form>
-                </div>
-            </div>    
-        </section>
-
-        <!-- Footer -->
-        <section class="content-section">
-            <footer>
-                <div class="container text-center">
-                    <p><span class="red">♥</span> <span class="blue">♠ <span class="red">♦</span> <span class="blue">♣</span><br />
-                    <p><small>&copy; <script>new Date().getFullYear()>2010&&document.write(" "+new Date().getFullYear());</script>, PB.</small></p><br />
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fpaavan.buddhdev&width=92&height=21&layout=button_count&show_faces=false&appId" width="92" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                        </li>
-                        <li>
-                            <div style="border-radius: 4px; border-right: 1px solid #AAAAAA; height: 20px; width: 95px; overflow: hidden;"><a class="twitter-follow-button" href="https://twitter.com/p44v9n" data-show-screen-name="false" data-show-count="true">Follow @p44v9n</a></div>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </section>
-        <!-- Load scripts -->
-        <!-- jQuery Version 1.11.0-->
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script><!-- replace with http://responsive-nav.com/ -->
-        <script src="js/grayscale.js"></script>
-        <!-- has controls for navigation - replace with http://responsive-nav.com/ and  -->
-        <!--     <script src="js/jquery.slides.min.js"></script><!-- replace with photoswipe -->
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <!-- Bootstrap Core JavaScript, requires jq -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-        <script>
-
-       $(document).ready(function(){
-
-            $('.testimonials').slick({
-                adaptiveHeight: true,
-                arrows: true,
-                autoplay: false,
-                dots: true,
-                infinite:true,
-            });
-
-            $('.bigphotoslick').slick({      
-              lazyLoad: 'progressive',
-              slidesToShow:1,
-              centerMode:true,
-              dots:true,
-              autoplay: false,
-              slidesToScroll:1,
-              infinite:true,
-              // responsive: []
-            });   
-
-            $('.profilephotoslick').slick({      
-                dots:false,
-                fade:true,
-                arrows:false,
-                infinite:true,
-                autoplay: true,
-                autoplaySpeed:500,
-                speed:4000,
-            });
-
-        });
-
-        // Twitter widget
-        window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        
-        t._e = [];
-        t.ready = function(f) {
-        t._e.push(f);
-        };
-        
-        return t;
-        }(document, "script", "twitter-wjs"));
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top">
+					<i class="fa fa-magic fa-fw fa-flip-horizontal"></i>&nbsp;PAAVAN
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li><a class="page-scroll" href="#about">About</a></li>
+<!-- <li><a class="page-scroll" href="#bio">Bio</a></li>
+	<li><a class="page-scroll" href="#hire">Hire</a></li> -->
+	<li><a class="page-scroll" href="#testimonials">Testimonials</a></li>
+	<li><a class="page-scroll" href="#photos">Photos</a></li>
+	<li><a class="page-scroll" href="#fringe">Show</a></li>
+	<li><a class="page-scroll" href="#contact">Contact</a></li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+	<div class="intro-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h1 class="brand-heading">Paa<span class="kern">v</span><span class="kern">a</span>n</h1>
+				</div>
+				<div class="col-xs-4 col-xs-offset-4">
+					<p class="intro-text">
+						Professional entertainer;<br />master magician.
+					</p>
+					<br />
+					<a href="#bio" class="btn btn-circle page-scroll">
+						<i class="fa fa-angle-double-down animated"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 
 
+<!-- About Section -->
+<section id="about" class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>Hi there.</h2>
+			<p>My name is Paavan. I'm a magician.</p>
+			<br />
+			<p>I specialise in performing at student balls and other events for young people. I have also just finished my undergraduate degree in Computer Science & Philosophy at Hertford College, University of Oxford.</p>
+			<br />
+			<p>Have you got an event coming up? I'd love to talk to you about haveing me perform there, no matter what the occasion is. Hiring a magician is a great way to break ice and entertain your guests. I can wander between standing or seated guests, performing magic tricks to small groups of people. From performing elegant card magic at champagne receptions, to making miracles happen on a sofa at a house party, I have experience in it all.</p>
+			<br /><br />
+			<p>See what people have to say about me <a class="page-scroll" href="#testimonials" style="color:lightblue">below</a>, or <a class="page-scroll" href="#contact" style="color:#ffacac">get in contact</a>.</p>
+		</div>
+	</div>
+</section>
 
-            $('#groundhogclick').on('hover',function(){
-                $('#hiddengroundhog').css('display','inline');
-                $('#hiddengroundhog').css('padding','50px');
-            }
-            );
+<!-- <section id="parallax1" class="content-section text-center"> -->
+<section id="parallax1" >
+</section>
 
-        </script>
-        
-        <!--   <div itemscope itemtype="http://schema.org/Person">
-            <div itemprop="name">Paavan Buddhdev</div>
-        </div> -->
-        
-    </body>
+<!--
+<section id="hire" class="container content-section text-center">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2">
+<h2>Hire Paavan</h2>
+
+</div>
+</div>
+</section>
+
+<section id="parallax2" class="content-section text-center">
+</section> -->
+
+<!-- Testimonials -->
+<!-- TODO - change to carousel, with a 'see-all' button that brings up a modal using masonry to arrange all of them on a single page. also merge in client photos for each. -->
+<section id="testimonials" class="content-section text-center">
+	<div class="container">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>Testimonials</h2>
+			<div class="testimonials" >
+				<div>
+					<p>"Paavan was very helpful beforehand, advising me on what style of magic would be best suited for my event. And then most importantly, when he turned up he was very approachable and wowed the whole party. I would definitely recommend him."</p>
+					<p class="name">Jack Adler, Worcester College Entz Rep</p>
+					<img class="client-images" width="100" height="100" src="img/clients/oxuni.png" />
+					<img class="client-images" width="100" height="100" src="img/clients/worc.PNG" />
+				</div>
+				<div>
+					<p>"Simply. Mind. Blown. It was great to have Paavan perform at our event and amaze all our guests, I would definitely request his presence next time!"</p>
+					<p class="name">Pauline Chatelan, Oxford RAG Officer</p>
+					<img class="client-images" width="100" height="100" src="img/clients/oxrag.png" />
+				</div>
+				<div>
+					<p>"When looking for magicians for our ball, I instantly thought of Paavan &mdash; I've seen him at numerous events and would class him as one of the best magicians in Oxford. He was easy to book, flexible and professional. On the night, the guests all loved him and are still trying to figure out how he does it! For anyone looking for a magician, I couldn't recommend Paavan more highly.</p>
+					<p class="name">Louisa Manning, St Peter's Ball</p>
+					<img class="client-images" width="100" height="100" src="img/clients/oxuni.png" />
+					<img class="client-images" width="100" height="100" src="img/clients/peters.png" />
+				</div>
+				<div>
+					<p>"Paavan definitely made a big difference to our event. It wouldn't have been the same without him!"</p>
+					<p class="name">Liam Peck, Oxford Medical Students Society Ball</p>
+					<img class="client-images" width="100" height="100" src="img/clients/oxmedsoc.PNG" /><img class="client-images" width="100" height="100" src="img/clients/bleinheim.png" />
+				</div>
+				<div>
+					<p>"Paavan makes me doubt my own disbelief in magic!"</p>
+					<p class="name">Makena Löhr, Oxford Hub President</p>
+					<img class="client-images" width="100" height="100" src="img/clients/oxhub.png" />
+				</div>
+<!-- <div>
+<p>"Paavan is a charmer in two ways: he charms people with his craft of magic as well as with his charismatic nature. In craft and in person, he is magical.</p>
+<p class="name">Elspeth Reilly, American SchoolLondon</p>
+<img class="client-images" width="100" height="100" src="img/clients/" />
+</div> -->
+<div>
+	<p>"A thank you to Paavan, our magical man,<br />'Cos he can do tricks that no one else can.<br />Jaws dropping hard; guests losing their s**t<br />And great fun himself &mdash; a man of great wit."</p>
+	<p class="name">Dickie Cartwright, Varsity Trip Committee and <span id="groundhogclick">Groundhog Day</span></p>
+	<img class="client-images" width="100" height="100" src="img/clients/varsitytrip.png" />
+	<img class="client-images" width="100" height="100" src="img/clients/valthorens.png" />
+	<img id="hiddengroundhog" class="client-images" width="100" height="100" src="img/clients/groundhogday.png" style="display:none;"/>
+</div>
+<div>
+	<p>"The best magician in Oxford!"</p>
+	<p class="name">Tutku Bektaş, Oxford Vice-President</p>
+	<img class="client-images" width="100" height="100" src="img/clients/oxhub.png" />
+</div>
+</div>
+<p class="name"><small><em>If you've seen me perform and want to write a testimonial, <a class="red page-scroll" href="#contact">I'd love to hear from you!</a></em></small></p><br />
+</div>
+</div>
+</section>
+
+<section id="parallax3" class="content-section text-center">
+</section>
+
+<!-- Photos Section -->
+<section id="photos" class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>Photos</h2>
+			<div class="bigphotoslick">
+				<!-- Pics -->
+				<img data-lazy="img/big-photos/jsoc1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<!-- <img data-lazy="img/big-photos/hildas2_edit.png" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo-->
+				<img data-lazy="img/big-photos/parisball2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/vt2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<!-- <img data-lazy="img/big-photos/jsoc3_crop.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> this one is in black and white-->
+				<img data-lazy="img/big-photos/pembroke1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/JtO3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/pembroke3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/hildas1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/jsoc4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/annabelcc.jpeg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- maybe low qual? -->
+				<img data-lazy="img/big-photos/parisball3.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<!-- <img data-lazy="img/big-photos/yuleball.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> moved to a parallax photo -->
+				<img data-lazy="img/big-photos/jsoc6.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/vt1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/pembroke4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/blenheim.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> <!-- repeat but I want it seen lots lol -->
+				<img data-lazy="img/big-photos/blenheim2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<img data-lazy="img/big-photos/parisball1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" />
+				<!-- <img data-lazy="img/big-photos/pembroke2.pjpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> spectator -->
+				<!-- <img data-lazy="img/big-photos/icaew1_colour.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> derp face -->
+				<!-- <img data-lazy="img/big-photos/JtO4.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
+				<!-- <img data-lazy="img/big-photos/JtO2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> b&w and low qual -->
+				<!-- <img data-lazy="img/big-photos/jsoc2.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> parallax photo -->
+				<!-- <img data-lazy="img/big-photos/jsoc5.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> card spring, no spectators-->
+				<!-- <img data-lazy="img/big-photos/JtO1.jpg" style="height:400px;width:auto;" class="img-responsive img-rounded" /> low qual-->
+<!-- Navigation
+<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left fa-fw"></i></a>
+<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right fa-fw"></i></a>
+-->
+</div>
+</div>
+</div>
+</section>
+
+<section id="parallax4" class="content-section text-center">
+</section>
+
+<!-- fringe Section -->
+<section id="fringe" class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h2>Paavan's Solo Show</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-2">
+			<img src="img/show/fringe2.gif" title="A Theory Of Magic" width="300px" style="max-width: 100%; height: auto; border:#111 solid 3px"/>
+		</div>
+		<div class="col-sm-4">
+			<p>My solo show,<br />A THEORY OF MAGIC,<br /> firstdebuted at the Edinburgh Festival Fringe 2015 at <a href="http://www.la-belleangele.com/">La Belle Angele</a>, in association with PBH's Free Fringe.</p>
+			<br />
+			<p>Depending on your event, I can perform a selection of magic effects from this show to a larger group of people. <a class="page-scroll" href="#contact" style="color:#ffacac">Get in touch with me</a> and let's make something happen.</p>
+		</div>
+	</div>
+	<br /><br />
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h4>Praise for a Theory of Magic</h4>
+			<p>"<!--Judging by the applause and puzzled/intrigued faces, my friends and I agree that the show went amazingly well. -->Unlike the usual corny magic shows I had come to expect, Paavan's show thankfully didn't involve pulling any rabbits out of hats, but instead had genuinely baffling tricks. 10/10 would recommend."</p><p class="name">Phoebo Friedin, Brasenose JCR Freshers' Committee</p><br />
+			<p>"Being part of Paavan's magic is like rolling down a grassy bank into a river of puppies, candyfloss and laughter. Delightful, hilarious and intriguing."</p><p class="name">Guy Lewy, Co-President of the Cambridge University Scientific Society</p>
+		</div>
+	</div>
+</section>
+
+<section id="parallax5" class="content-section text-center">
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+	<!-- TODO implement peeky placeholders http://codepen.io/lukeandrewreid/pen/OVPGXN -->
+	<!-- Photos of P in a circle -->
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<!-- <div id="force-size" style="width:200px; height:200px; margin-left: auto; margin-right: auto;"> -->
+			<div style="width:200px; height:200px; margin-left: auto; margin-right: auto;">
+				<div class="profilephotoslick">
+					<img class="profileshot" src="img/photos/img(1).jpg" />
+					<img class="profileshot" src="img/photos/img(2).jpg" />
+					<img class="profileshot" src="img/photos/img(3).jpg" />
+					<img class="profileshot" src="img/photos/img(4).jpg" />
+					<img class="profileshot" src="img/photos/img(5).jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<!-- Title -->
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2" >
+			<h2>Contact Paavan</h2>
+			<p>To get in touch regarding booking for events, or for any other enquiries, please drop me an email using the form below.<!-- , or feel free to tweet <a href="https://twitter.com/intent/tweet?screen_name=p44v9n&text="Ello%20ello"" class="blue" >@p44v9n</a> if that's more your kind of thing. --></p><br />
+			<form class="form-horizontal" action="//formspree.io/hello@paavan.co" method="POST" >
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-6">
+							<input class="form-control" type="text" name="name" placeholder="Your name" >
+						</div>
+						<div class="col-md-6">
+							<input class="form-control" type="email" name="_replyto" placeholder="Your email" >
+						</div>
+					</div>
+					<textarea class="form-control" name="message" maxlength="1000" id="message" placeholder="Your message" rows="5"></textarea>
+					<input type="text" name="_gotcha" style="display:none" /> <!--Honeypot field for spammer-->
+					<input class="btn btn-default" type="submit" value="Send" />
+				</div>
+			</form>
+		</div>
+	</div>    
+</section>
+
+<!-- Footer -->
+<section class="content-section">
+	<div class="cardcontainer" style="position:relative;">
+		<img class="cardlayer1" src="img/parallaxcards/fallingcardsback.png">
+		<img class="cardlayer2" src="img/parallaxcards/fallingcardsfront.png">
+		<footer>
+			<div class="container text-center">
+				<p><span class="red">♥</span> <span class="blue">♠ <span class="red">♦</span> <span class="blue">♣</span><br />
+					<p><small>&copy; <script>new Date().getFullYear()>2010&&document.write(" "+new Date().getFullYear());</script>, PB.</small></p><br />
+					<ul class="list-inline banner-social-buttons">
+						<li>
+							<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fpaavan.buddhdev&width=92&height=21&layout=button_count&show_faces=false&appId" width="92" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						</li>
+						<li>
+							<div style="border-radius: 4px; border-right: 1px solid #AAAAAA; height: 20px; width: 95px; overflow: hidden;"><a class="twitter-follow-button" href="https://twitter.com/p44v9n" data-show-screen-name="false" data-show-count="true">Follow @p44v9n</a></div>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</section>
+
+	<!-- Easter Egg Modal -->
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog" style="width:380px;">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<img src="img/easteregg/magaac.gif" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Form filled Modal -->
+<!-- 	<div id="formModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				Thanks!
+				</div>
+				<div class="modal-body">
+				I'll get back to you as soon as possible!
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- Load scripts -->
+
+	<!-- jQuery Version 1.11.0-->
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script><!-- replace with http://responsive-nav.com/ -->
+	<script src="js/grayscale.js"></script>
+	<!-- has controls for navigation - replace with http://responsive-nav.com/ and  -->
+	<!--     <script src="js/jquery.slides.min.js"></script><!-- replace with photoswipe -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript, requires jq -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
-    <!--
-    Theme from http://startbootstrap.com/template-overviews/grayscale/ - cheers @n33co!
-    -->
+	<!--Konami Code-->
+	<script type="text/javascript" src="js/konami.js"></script>
+	<script type="text/javascript">var easter_egg = new Konami(function() { $("#myModal").modal('show'); });</script>
+
+
+	<script>
+		$(document).ready(function(){
+
+			$('.testimonials').slick({
+				adaptiveHeight: true,
+				arrows: true,
+				autoplay: false,
+				dots: true,
+				infinite:true,
+			});
+
+			$('.bigphotoslick').slick({      
+				lazyLoad: 'progressive',
+				slidesToShow:1,
+				centerMode:true,
+				dots:true,
+				autoplay: false,
+				slidesToScroll:1,
+				infinite:true,
+				// responsive: []
+			});   
+
+			$('.profilephotoslick').slick({      
+				dots:false,
+				fade:true,
+				arrows:false,
+				infinite:true,
+				autoplay: true,
+				autoplaySpeed:500,
+				speed:4000,
+			});
+
+		});
+
+		// Twitter widget
+		window.twttr = (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function(f) {
+				t._e.push(f);
+			};
+
+			return t;
+		}(document, "script", "twitter-wjs"));
+
+		</script>
+
+</body>
 </html>

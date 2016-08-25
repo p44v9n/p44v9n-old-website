@@ -1,3 +1,25 @@
+/* parallax cards */
+
+ .cardlayer1 {
+    position: absolute;
+    top:-100px;left:0;
+    z-index:-1;
+    width:100%;
+  }
+  .cardlayer2 {
+    width:100%;
+    position:absolute;
+    top:-100px;left:0;
+    z-index:1;
+  }
+
+@media (max-width: 767px) {
+  .cardlayer1, .cardlayer2{
+    display:none;
+  }
+}
+
+
 /* some colours and spacing fixes */
 
 .name {
